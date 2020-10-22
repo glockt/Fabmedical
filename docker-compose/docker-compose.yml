@@ -5,10 +5,10 @@ services:
     image: mongo
     restart: always
     volumes:
-      - ./data:/data/db
+      - ../data:/data/db
 
   api:
-    build: ./Fabmedical/content-api
+    build: ../content-api
     image: content-api
     depends_on:
       - mongo
@@ -17,7 +17,7 @@ services:
 
 
   web:
-    build: ./Fabmedical/content-web
+    build: ../content-web
     image: content-web
     depends_on:
        - api

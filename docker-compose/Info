@@ -1,1 +1,2 @@
 Kopiere beide docker-compose files nach zwei Ebenen weiter höher und ertelle data Ordner für die Daten der DB.
+Neu: Es muss nichts mehr kopiert werden, data Ordner ist auch schon angelegt. Alle Pfade sind dementsprechend angepasst.
