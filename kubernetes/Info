@@ -1,0 +1,11 @@
+Die .yml Dateien sind kubernetes Dateien, um Container in Kubernetes zum laufen zu bringen.
+
+Zum Beispiel
+kubectl create --save-config=true -f web.deployment.yml -f web.service.yml
+legt einen Service und ein Deployment für web fest was in den beschrieben ist.
+Für api fehlt eine Datei, der Service wurde im Kubernetes Dashboard erstellt.
+
+Mit
+kubectl get pods
+kubectl get service
+Kann man überprüfen ob alles läuft.
